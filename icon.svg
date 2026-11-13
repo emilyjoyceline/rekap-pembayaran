@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142840" />
+      <stop offset="50%" stop-color="#1b3b5f" />
+      <stop offset="100%" stop-color="#2b7293" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="sheetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f4f8" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner Soft Border -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="4" />
+
+  <!-- Document Sheet -->
+  <g filter="url(#shadow)">
+    <!-- Main Sheet Body -->
+    <path d="M 120 90 L 320 90 L 392 162 L 392 410 C 392 422 382 432 370 432 L 120 432 C 108 432 98 422 98 410 L 98 112 C 98 100 108 90 120 90 Z" fill="url(#sheetGrad)" />
+    <!-- Folded Corner -->
+    <path d="M 320 90 L 320 152 C 320 158 326 162 332 162 L 392 162 Z" fill="#d9e1f2" />
+  </g>
+
+  <!-- Sheet Header Bar -->
+  <rect x="134" y="125" width="150" height="20" rx="6" fill="#2b7293" />
+  
+  <!-- Sheet Table Lines / Rows -->
+  <rect x="134" y="165" width="160" height="10" rx="5" fill="#94a3b8" />
+  <rect x="134" y="190" width="224" height="8" rx="4" fill="#cbd5e1" />
+  <rect x="134" y="210" width="224" height="8" rx="4" fill="#e2e8f0" />
+  
+  <rect x="134" y="238" width="224" height="8" rx="4" fill="#cbd5e1" />
+  <rect x="134" y="258" width="224" height="8" rx="4" fill="#e2e8f0" />
+  
+  <rect x="134" y="286" width="224" height="8" rx="4" fill="#cbd5e1" />
+  <rect x="134" y="306" width="224" height="8" rx="4" fill="#e2e8f0" />
+
+  <!-- Divider Line -->
+  <line x1="134" y1="335" x2="358" y2="335" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6,4" />
+
+  <!-- Grand Total Bar -->
+  <rect x="134" y="355" width="140" height="14" rx="6" fill="#d9e1f2" />
+  <rect x="290" y="355" width="68" height="14" rx="6" fill="#107c41" />
+
+  <!-- Floating Green Badge: Indonesian Rupiah / Success -->
+  <g filter="url(#shadow)">
+    <circle cx="360" cy="380" r="54" fill="url(#accentGrad)" stroke="#ffffff" stroke-width="6" />
+    <!-- White Currency Text "Rp" -->
+    <text x="360" y="392" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-1">Rp</text>
+  </g>
+</svg>

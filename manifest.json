@@ -1,0 +1,19 @@
+{
+  "name": "Rekap Pembayaran DP & Potongan Olah Jasa",
+  "short_name": "Rekap DP",
+  "description": "Aplikasi Pengelolaan Rekap Tagihan Barang, Pembayaran DP, dan Olah Jasa",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b3b5f",
+  "theme_color": "#1b3b5f",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512 any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
